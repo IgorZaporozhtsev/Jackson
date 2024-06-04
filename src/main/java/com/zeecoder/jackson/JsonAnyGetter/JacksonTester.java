@@ -52,7 +52,7 @@ class Student {
         properties = new HashMap<>();
         this.iban = iban;
     }
-    //@JsonAnyGetter
+    @JsonAnyGetter
     public Map<String, String> getProperties(){
         return properties;
     }
