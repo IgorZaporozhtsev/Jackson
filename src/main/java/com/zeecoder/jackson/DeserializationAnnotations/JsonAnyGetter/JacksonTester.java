@@ -1,11 +1,10 @@
-package com.zeecoder.jackson.JsonAnyGetter;
+package com.zeecoder.jackson.DeserializationAnnotations.JsonAnyGetter;
 
 
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
