@@ -2,6 +2,7 @@ package com.zeecoder.jackson.JsonAnyGetter;
 
 
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
@@ -31,9 +32,9 @@ import java.util.UUID;
  * */
 
 public class JacksonTester {
-    public static void main(String args[]){
+    public static void main(String[] args) throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();
-        try{
+
             Student student = new Student(UUID.randomUUID());
             student.add("Name", "Mark");
             student.add("RollNo", "1");
@@ -41,10 +42,7 @@ public class JacksonTester {
                     .writerWithDefaultPrettyPrinter()
                     .writeValueAsString(student);
             System.out.println(jsonString);
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
+
     }
 }
 class Student {
