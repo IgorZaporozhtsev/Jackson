@@ -1,4 +1,4 @@
-package com.zeecoder.jackson.GeneralAnnotations;
+package com.zeecoder.jackson.GeneralAnnotations.JsonProperty;
 
 import java.io.IOException;
 import com.fasterxml.jackson.annotation.JsonProperty;
